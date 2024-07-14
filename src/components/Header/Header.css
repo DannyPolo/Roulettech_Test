@@ -1,0 +1,53 @@
+.Header {
+  color: white;
+  background-color: #758694;
+  font-size: large;
+  padding-top: 0.5cm;
+}
+
+.title{
+  padding-left: 0.5cm;
+  font-size: xx-large;
+}
+
+.deleteBtn {
+  color: white;
+  background-color: red;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: medium;
+  position: absolute;
+  right:1cm;
+}
+
+.addBtn {
+  background-color: green;
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: medium;
+  position: absolute;
+  right: 3cm;
+}
+
+.editBtn {
+  background-color: fuchsia;
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: medium;
+  position: absolute;  
+  right: 7.3cm;
+}
+
+.tableHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#select { 
+}
+
+

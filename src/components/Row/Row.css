@@ -1,0 +1,39 @@
+.row{
+    background-color: #E5E1DA;
+}
+
+#name {
+  padding-left: 1cm;
+  padding-right: 1cm;
+  position: absolute;
+  left:15%;
+}
+
+#lastName {
+  padding-left: 1cm;
+  padding-right: 1cm;
+  position: absolute;
+  left:25%;
+}
+
+#email {
+  padding-left: 1cm;
+  padding-right: 1cm;
+  position: absolute;
+  left:35%;
+}
+
+#age {
+  padding-left: 1cm;
+  padding-right: 1cm;
+  position: absolute;
+  left:50%;
+}
+
+#grade {
+  padding-left: 1cm;
+  padding-right: 1cm;
+  position: absolute;
+  left:60%;
+}
+
