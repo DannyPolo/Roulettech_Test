@@ -14,11 +14,11 @@ const AddStudent = (props) => {
           <label>Grade</label>
         </div>
         <div class='inputblock'>
-          <input type="text"></input>
-          <input type="text" ></input>
-          <input type="email"></input>
-          <input type="number"></input>
-          <input type="number"></input>
+          <input id="nameInput" type="text"></input>
+          <input id="lastNameInput" type="text" ></input>
+          <input id="emailInput" type="email"></input>
+          <input id="ageInput" type="number"></input>
+          <input id="gradeInput" type="number"></input>
         </div>
       </div>
     </div>

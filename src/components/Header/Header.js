@@ -23,7 +23,6 @@ const Header = (props) => {
       <hr></hr>
 
       <table class="tableHeader">
-        <th id="select">Select</th>
         <th id="name">Name</th>
         <th id="lastName">Last Name</th>
         <th id="email">Email</th>
