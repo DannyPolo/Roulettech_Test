@@ -3,7 +3,7 @@ table {
 }
 
 .row{
-  background-color: #E5E1DA;
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

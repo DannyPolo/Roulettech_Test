@@ -10,7 +10,6 @@ const Table = (props) => {
     <div>
       <Header title="Manage Student" />
       <Row students={students} />
-      <AddStudent students={students} />
     </div>
   );
 };

@@ -1,7 +1,10 @@
 import "./AddStudent.css";
 
+
 const AddStudent = (props) => {
-  const { students } = props;
+
+  const { student } = props;
+  
   return (
     <div class='addcontainer'>
       <h1 class="title">Form</h1>
@@ -14,11 +17,11 @@ const AddStudent = (props) => {
           <label>Grade</label>
         </div>
         <div class='inputblock'>
-          <input id="nameInput" type="text"></input>
-          <input id="lastNameInput" type="text" ></input>
-          <input id="emailInput" type="email"></input>
-          <input id="ageInput" type="number"></input>
-          <input id="gradeInput" type="number"></input>
+          <input id="nameInput" type="text">{student?.name}</input>
+          <input id="lastNameInput" type="text" >{student?.lastName}</input>
+          <input id="emailInput" type="email">{student?.email}</input>
+          <input id="ageInput" type="number">{student?.age}</input>
+          <input id="gradeInput" type="number">{student?.grade}</input>
         </div>
       </div>
     </div>
