@@ -9,28 +9,32 @@ const Row = (props) => {
 
     const { students } = props;
 
-    let selectedStudent;
+    const [selectedStudent, setSelectedStudent] = useState(null);
+    const [showAddStudent, setShowAddStudent] = useState(false);
 
-    const baseURL = "http://127.0.0.1:8000/student/";
-
-    const HandleClick = (props) => {
-      const {student} = props;
-      selectedStudent = student;
-    }
+    const handleClick = (student) => {
+      setSelectedStudent(student);
+      setShowAddStudent(true);
+    };
     
     return (
       <div>
         {students.map((student, index) => (
-          
-            <><tr key={index} class="row" onClick={HandleClick}>
-            <td id="name">{student?.name}</td>
-            <td id="lastName">{student?.lastName}</td>
-            <td id="email">{student?.email}</td>
-            <td id="age">{student?.age}</td>
-            <td id="grade">{student?.grade}</td>
-          </tr><br></br></>
+          <table className="row" key={index}>
+            <tbody>
+              <tr onClick={() => handleClick(student)}>
+              <td id="name">{student?.name}</td>
+              <td id="lastName">{student?.lastName}</td>
+              <td id="email">{student?.email}</td>
+              <td id="age">{student?.age}</td>
+              <td id="grade">{student?.grade}</td>
+              </tr>
+            </tbody>
+          </table>
         ))}
-        {selectedStudent === null ? <AddStudent/> : <AddStudent student={selectedStudent} />}
+
+        {showAddStudent ? <AddStudent student={selectedStudent}/> : <AddStudent/>}
+
       </div>
     );
 };

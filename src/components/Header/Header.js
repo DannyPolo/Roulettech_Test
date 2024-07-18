@@ -6,28 +6,23 @@ import AddStudent from "../AddStudent/AddStudent";
 const Header = (props) => {
   const { title } = props;
   return (
-    <div class="Header">
-      <div>
-        <b class="title">{title}</b>
-        <button class="deleteBtn">
-          <b>Delete</b>
-        </button>
-        <button class="addBtn">
-          <b>Add New Student</b>
-        </button>
-        <button class="editBtn">
-          <b>Edit</b>
-        </button>
-      </div>
+    <div className="Header">
+      <>
+        <b className="title">{title}</b>
+      </>
 
       <hr></hr>
 
-      <table class="tableHeader">
-        <th id="name">Name</th>
-        <th id="lastName">Last Name</th>
-        <th id="email">Email</th>
-        <th id="age">Age</th>
-        <th id="grade">Grade</th>
+      <table className="tableHeader">
+        <thead>
+          <tr>
+            <th id="name">Name</th>
+            <th id="lastName">Last Name</th>
+            <th id="email">Email</th>
+            <th id="age">Age</th>
+            <th id="grade">Grade</th>
+          </tr>
+        </thead>
       </table>
     </div>
   );

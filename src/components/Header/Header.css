@@ -1,50 +1,26 @@
 .Header {
+  display: flex;
+  flex-direction: column;
   color: white;
   background-color: #758694;
   font-size: large;
   padding-top: 0.5cm;
+  justify-content: center;
+  align-content: center;
 }
 
 .title{
-  padding-left: 0.5cm;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   font-size: xx-large;
 }
 
-.deleteBtn {
-  color: white;
-  background-color: red;
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: medium;
-  position: absolute;
-  right:1cm;
-}
-
-.addBtn {
-  background-color: green;
-  color: white;
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: medium;
-  position: absolute;
-  right: 3cm;
-}
-
-.editBtn {
-  background-color: fuchsia;
-  color: white;
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: medium;
-  position: absolute;  
-  right: 7.3cm;
-}
 
 .tableHeader{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-content:start ;
 }
 
 #select { 
@@ -52,4 +28,9 @@
 
 th{
   width: 100px;
+}
+
+table {
+  table-layout : fixed;
+  width: 100%;
 }

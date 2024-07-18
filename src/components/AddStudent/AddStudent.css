@@ -8,6 +8,7 @@
 .labelblock{
   display:flex;
   flex-direction: column;
+  color: white;
 }
 
 .inputblock{
@@ -21,4 +22,30 @@
   justify-items: center;
   align-items: center;
   background-color: #758694;
+}
+
+.title{
+  color: white;
+}
+
+.buttoncontaider{
+  display: flex;
+  flex-direction: row;
+  justify-content:center ;
+  gap: 15px;
+}
+
+.deleteBtn {
+  color: white;
+  background-color: red;
+}
+
+.addBtn {
+  background-color: green;
+  color: white;
+}
+
+.editBtn {
+  background-color: fuchsia;
+  color: white;
 }
