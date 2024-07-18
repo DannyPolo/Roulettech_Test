@@ -9,7 +9,8 @@ import axios from 'axios';
 
 const Home = (props) => {
 
-  const baseURL = "http://127.0.0.1:8000/student/";
+  //const baseURL = "http://127.0.0.1:8000/student/";
+  const baseURL = "http://3.145.131.202:8000/student/";
 
   const [data, setData] = useState([]);
 

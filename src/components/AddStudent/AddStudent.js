@@ -17,7 +17,8 @@ const AddStudent = (props) => {
     };
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/student/', newStudent);
+      //const response = await axios.post('http://127.0.0.1:8000/student/', newStudent);
+      const response = await axios.post('http://3.145.131.202:8000/student/', newStudent);
       console.log('Student added:', response.data);
       window.location.reload(); 
     } catch (error) {
@@ -33,7 +34,8 @@ const AddStudent = (props) => {
     }
 
     try {
-      await axios.delete(`http://127.0.0.1:8000/student/${student.id}/`);
+      //await axios.delete(`http://127.0.0.1:8000/student/${student.id}/`);
+      await axios.delete(`http://3.145.131.202:8000/student/${student.id}/`);
       console.log('Student deleted');
       window.location.reload();
     } catch (error) {
@@ -57,7 +59,8 @@ const AddStudent = (props) => {
     };
 
     try {
-      const response = await axios.put(`http://127.0.0.1:8000/student/${student.id}/`, updatedStudent);
+      //const response = await axios.put(`http://127.0.0.1:8000/student/${student.id}/`, updatedStudent);
+      const response = await axios.put(`http://3.145.131.202:8000/student/${student.id}/`, updatedStudent);
       console.log('Student updated:', response.data);
       window.location.reload();
     } catch (error) {
